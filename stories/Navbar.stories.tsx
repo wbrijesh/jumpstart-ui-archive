@@ -1,10 +1,10 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import { Button, ButtonProps } from '../src';
+import { Navbar, NavbarProps } from '../src';
 
 const meta: Meta = {
-  title: 'Input/Button',
-  component: Button,
+  title: 'Input/Navbar',
+  component: Navbar,
   argTypes: {
     onClick: { action: 'clicked' },
     title: {
@@ -25,7 +25,7 @@ const meta: Meta = {
 
 export default meta;
 
-const Template: Story<ButtonProps> = (args) => <Button {...args} />;
+const Template: Story<NavbarProps> = (args) => <Navbar {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
