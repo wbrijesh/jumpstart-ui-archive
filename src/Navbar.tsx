@@ -9,12 +9,12 @@ function classNames(...classes: any[]) {
   return classes.filter(Boolean).join(' ');
 }
 
-export interface ButtonProps
-  extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+export interface NavbarProps {
   title: string;
+  disabled?: boolean;
 }
 
-export const Button = ({ disabled, title, ...rest }: ButtonProps) => (
+export const Navbar = ({ disabled, title, ...rest }: NavbarProps) => (
   <>
     <Disclosure as="nav" className="bg-white shadow">
       {({ open }) => (
