@@ -36,16 +36,20 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "jumpstart-ds",
-  "author": "Chris Scott",
-  "module": "dist/jumpstart-ds.esm.js",
+  "name": "jumpstart-ui",
+  "author": "Brijesh Wawdhane",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wbrijesh/jumpstart-ui.git"
+  },
+  "module": "dist/jumpstart-ui.esm.js",
   "size-limit": [
     {
-      "path": "dist/jumpstart-ds.cjs.production.min.js",
+      "path": "dist/jumpstart-ui.cjs.production.min.js",
       "limit": "10 KB"
     },
     {
-      "path": "dist/jumpstart-ds.esm.js",
+      "path": "dist/jumpstart-ui.esm.js",
       "limit": "10 KB"
     }
   ],
