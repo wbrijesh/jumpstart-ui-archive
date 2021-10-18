@@ -7,14 +7,39 @@ const meta: Meta = {
   component: Navbar,
   argTypes: {
     onClick: { action: 'clicked' },
-    title: {
+    appName: {
       control: {
         type: 'text',
       },
     },
-    disabled: {
+    appLogo: {
       control: {
-        type: 'boolean',
+        type: 'text',
+      },
+    },
+    homePageUrl: {
+      control: {
+        type: 'text',
+      },
+    },
+    buttonFilledTitle: {
+      control: {
+        type: 'text',
+      },
+    },
+    buttonFilledUrl: {
+      control: {
+        type: 'text',
+      },
+    },
+    buttonBlankTitles: {
+      control: {
+        type: 'array',
+      },
+    },
+    buttonBlankUrls: {
+      control: {
+        type: 'array',
       },
     },
   },
@@ -29,6 +54,15 @@ const Template: Story<NavbarProps> = (args) => <Navbar {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-  title: 'Storybook Button',
-  disabled: false,
+  appName: 'Jumpstart UI',
+  appLogo: 'https://assets.brijesh-wawdhane.com/jumpstart-ui-logo.svg',
+  homePageUrl: 'https://brijesh-wawdhane.com',
+  buttonFilledTitle: 'Get Started',
+  buttonFilledUrl: 'https://brijesh-wawdhane.com',
+  buttonBlankTitles: ['Documentation', 'Github', 'Twitter'],
+  buttonBlankUrls: [
+    'https://google.com',
+    'https://github.com',
+    'https://twitter.com',
+  ],
 };

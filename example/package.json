@@ -8,7 +8,7 @@
     "build": "parcel build index.html"
   },
   "dependencies": {
-    "awesome-component-library": "^0.1.3",
+    "jumpstart-ui": "^0.0.1",
     "react-app-polyfill": "^1.0.0"
   },
   "alias": {
