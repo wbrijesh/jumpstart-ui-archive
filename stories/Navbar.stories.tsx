@@ -22,6 +22,11 @@ const meta: Meta = {
         type: 'text',
       },
     },
+    height: {
+      constrol: {
+        type: 'text',
+      },
+    },
     buttonFilledTitle: {
       control: {
         type: 'text',
@@ -57,6 +62,7 @@ Default.args = {
   appName: 'Jumpstart UI',
   appLogo: 'https://assets.brijesh-wawdhane.com/jumpstart-ui-logo.svg',
   homePageUrl: 'https://brijesh-wawdhane.com',
+  height: '30',
   buttonFilledTitle: 'Get Started',
   buttonFilledUrl: 'https://brijesh-wawdhane.com',
   buttonBlankTitles: ['Documentation', 'Github'],
