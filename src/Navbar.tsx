@@ -6,6 +6,7 @@ export interface NavbarProps {
   appName?: string;
   appLogo: string;
   homePageUrl: string;
+  height: string;
   buttonFilledTitle: string;
   buttonFilledUrl: string;
   buttonBlankTitles: Array<string>;
@@ -15,6 +16,7 @@ export interface NavbarProps {
 export const Navbar = ({
   appName,
   homePageUrl,
+  height,
   buttonFilledTitle,
   buttonFilledUrl,
   buttonBlankTitles,
@@ -25,7 +27,7 @@ export const Navbar = ({
       {({ open }) => (
         <>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex justify-between h-16">
+            <div className={`flex justify-between h-${height}`}>
               <div className="flex">
                 <div className="-ml-2 mr-2 flex items-center md:hidden">
                   {/* Mobile menu button */}
