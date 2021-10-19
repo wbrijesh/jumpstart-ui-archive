@@ -1,16 +1,6 @@
 import React from 'react';
-<<<<<<< HEAD
-
-import { Disclosure } from '@headlessui/react';
-import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline';
-
-// function classNames(...classes: any[]) {
-//   return classes.filter(Boolean).join(' ');
-// }
-=======
 import { Disclosure, Menu } from '@headlessui/react';
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
->>>>>>> develop
 
 export interface NavbarProps {
   appName?: string;
@@ -29,19 +19,13 @@ export const Navbar = ({
   buttonFilledUrl,
   buttonBlankTitles,
   buttonBlankUrls,
-<<<<<<< HEAD
-}: NavbarProps) => (
-  <>
-    <Disclosure as="nav" className="bg-gray-50 shadow">
-=======
 }: NavbarProps) => {
   return (
     <Disclosure as="nav" className="bg-gray-50">
->>>>>>> develop
       {({ open }) => (
         <>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex justify-between h-22">
+            <div className="flex justify-between h-16">
               <div className="flex">
                 <div className="-ml-2 mr-2 flex items-center md:hidden">
                   {/* Mobile menu button */}
@@ -64,30 +48,14 @@ export const Navbar = ({
               </div>
               <div className="flex items-center">
                 <div className="flex-shrink-0">
-<<<<<<< HEAD
-                  {buttonBlankTitles.map((title, index) => (
-                    <a href={buttonBlankUrls[index]} type="button">
-                      <span className="mr-4 relative inline-flex items-center px-2 py-1 border border-transparent text-base font-medium rounded-custom text-gray-600 bg-gray-50 shadow-none hover:text-gray-900 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400">
-                        {title}
-                      </span>
-                    </a>
-                  ))}
-                  <a href={buttonFilledUrl}>
-                    <button
-                      type="button"
-                      className="relative inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-custom text-white bg-blue-600 shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
-=======
                   <a href={buttonFilledUrl}>
                     <button
                       type="button"
                       className="relative md:invisible inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-custom text-white bg-blue-600 shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
->>>>>>> develop
                     >
                       <span>{buttonFilledTitle}</span>
                     </button>
                   </a>
-<<<<<<< HEAD
-=======
                 </div>
                 <div className="hidden md:ml-4 md:flex-shrink-0 md:flex md:items-center">
                   <Menu as="div" className="ml-3 relative">
@@ -109,7 +77,6 @@ export const Navbar = ({
                       </a>
                     </div>
                   </Menu>
->>>>>>> develop
                 </div>
               </div>
             </div>

@@ -59,15 +59,6 @@ Default.args = {
   homePageUrl: 'https://brijesh-wawdhane.com',
   buttonFilledTitle: 'Get Started',
   buttonFilledUrl: 'https://brijesh-wawdhane.com',
-<<<<<<< HEAD
-  buttonBlankTitles: ['Documentation', 'Github', 'Twitter'],
-  buttonBlankUrls: [
-    'https://google.com',
-    'https://github.com',
-    'https://twitter.com',
-  ],
-=======
   buttonBlankTitles: ['Documentation', 'Github'],
   buttonBlankUrls: ['https://google.com', 'https://github.com'],
->>>>>>> develop
 };
