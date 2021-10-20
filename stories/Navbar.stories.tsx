@@ -3,7 +3,7 @@ import { Meta, Story } from '@storybook/react';
 import { Navbar, NavbarProps } from '../src';
 
 const meta: Meta = {
-  title: 'Input/Navbar',
+  title: 'Molecule/Navbar',
   component: Navbar,
   argTypes: {
     onClick: { action: 'clicked' },
