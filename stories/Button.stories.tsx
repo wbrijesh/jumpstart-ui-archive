@@ -39,8 +39,8 @@ export default meta;
 
 const Template: Story<ButtonProps> = (args) => <Button {...args} />;
 
-export const a = Template.bind({});
-a.args = {
+export const Default = Template.bind({});
+Default.args = {
   title: 'Button',
   link: 'https://brijesh-wawdhane.com',
   variant: 'primary',
