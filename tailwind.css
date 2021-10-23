@@ -123,6 +123,6 @@
   height: 10rem;
 }
 
-.rounded-custom {
-  border-radius: 0.1875rem;
+.sb-main-padded {
+  padding: 0 !important;
 }
