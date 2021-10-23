@@ -23,10 +23,10 @@ export const Navbar = ({
   buttonBlankUrls,
 }: NavbarProps) => {
   return (
-    <Disclosure as="nav" className="bg-gray-50">
+    <Disclosure as="nav" className="bg-white border-b border-gray-200">
       {({ open }) => (
         <>
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-full mx-auto px-4 sm:px-6 lg:px-6">
             <div className={`flex justify-between h-${height}`}>
               <div className="flex">
                 <div className="-ml-2 mr-2 flex items-center md:hidden">
@@ -53,7 +53,7 @@ export const Navbar = ({
                   <a href={buttonFilledUrl}>
                     <button
                       type="button"
-                      className="relative md:invisible inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-custom text-white bg-blue-600 shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+                      className="relative md:invisible inline-flex items-center px-3 py-1.5 border border-transparent text-base font-medium rounded text-white bg-blue-600 shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
                     >
                       <span>{buttonFilledTitle}</span>
                     </button>
@@ -64,7 +64,7 @@ export const Navbar = ({
                     <div className="hidden md:ml-6 md:flex md:items-center md:space-x-4">
                       {buttonBlankTitles.map((title, index) => (
                         <a href={buttonBlankUrls[index]} type="button">
-                          <span className="mr-4 relative inline-flex items-center px-2 py-1 border border-transparent text-base font-medium rounded-custom text-gray-600 bg-gray-50 shadow-none hover:text-gray-900 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400">
+                          <span className="mr-4 relative inline-flex items-center px-2 py-1 border border-transparent text-base font-medium rounded text-gray-600 bg-transparent shadow-none hover:text-gray-900 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400">
                             {title}
                           </span>
                         </a>
@@ -72,7 +72,7 @@ export const Navbar = ({
                       <a href={buttonFilledUrl}>
                         <button
                           type="button"
-                          className="relative hidden:onlyMobile inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-custom text-white bg-blue-600 shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+                          className="relative hidden:onlyMobile inline-flex items-center px-3 py-1.5 border border-transparent text-base font-medium rounded text-white bg-blue-600 shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
                         >
                           <span>{buttonFilledTitle}</span>
                         </button>

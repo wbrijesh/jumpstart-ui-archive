@@ -62,7 +62,7 @@ Default.args = {
   appName: 'Jumpstart UI',
   appLogo: 'https://assets.brijesh-wawdhane.com/jumpstart-ui-logo.svg',
   homePageUrl: 'https://brijesh-wawdhane.com',
-  height: '30',
+  height: '16',
   buttonFilledTitle: 'Get Started',
   buttonFilledUrl: 'https://brijesh-wawdhane.com',
   buttonBlankTitles: ['Documentation', 'Github'],
