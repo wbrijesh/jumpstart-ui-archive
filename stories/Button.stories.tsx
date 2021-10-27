@@ -6,7 +6,6 @@ const meta: Meta = {
   title: 'Action/Button',
   component: Button,
   argTypes: {
-    onClick: { action: 'clicked' },
     title: {
       control: {
         type: 'text',
@@ -20,13 +19,32 @@ const meta: Meta = {
     variant: {
       control: {
         type: 'select',
-        options: ['primary', 'ghost'],
+        options: [
+          'primary',
+          'ghost',
+          'link',
+          'fullWidth',
+          'success',
+          'warning',
+          'danger',
+        ],
       },
     },
     size: {
       control: {
         type: 'select',
         options: ['small', 'medium', 'large'],
+      },
+    },
+    icon: {
+      control: {
+        type: 'text',
+      },
+    },
+    iconPosition: {
+      control: {
+        type: 'select',
+        options: ['left', 'right'],
       },
     },
   },
@@ -41,8 +59,10 @@ const Template: Story<ButtonProps> = (args) => <Button {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-  title: 'Button',
+  title: 'Delete Account',
   link: 'https://brijesh-wawdhane.com',
-  variant: 'primary',
+  variant: 'danger',
   size: 'small',
+  icon: 'delete',
+  iconPosition: 'left',
 };
