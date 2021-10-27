@@ -13,7 +13,7 @@ export interface ButtonProps {
     | 'warning'
     | 'danger';
   size?: 'small' | 'medium' | 'large';
-  icon?: 'string';
+  icon?: string;
   iconPosition?: 'left' | 'right';
 }
 
