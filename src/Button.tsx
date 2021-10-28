@@ -57,7 +57,7 @@ export const Button = ({
           }
           ${
             variant?.toLowerCase() === 'link' &&
-            'bg-white text-blue-600 hover:bg-gray-100 px-2 py-0.5 text-base font-medium'
+            'bg-white text-blue-600 hover:bg-gray-100 px-2 py-0.5 text-base'
           }
           ${
             variant?.toLowerCase() === 'fullwidth' &&
@@ -66,17 +66,17 @@ export const Button = ({
           ${
             size?.toLowerCase() === 'small' &&
             variant?.toLowerCase() !== 'link' &&
-            'px-2 py-1.5 text-sm font-medium'
+            'px-2 py-1.5 text-sm font-semibold'
           }
           ${
             size?.toLowerCase() === 'medium' &&
             variant?.toLowerCase() !== 'link' &&
-            'px-3 py-1.5 text-base font-medium'
+            'px-3 py-1.5 text-base font-semibold'
           }
           ${
             size?.toLowerCase() === 'large' &&
             variant?.toLowerCase() !== 'link' &&
-            'px-4 py-2 text-base font-medium'
+            'px-4 py-2 text-base font-semibold'
           }
           `}
         >
